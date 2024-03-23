@@ -1,0 +1,3 @@
+displayName = QuantumCommunicator
+author = symmys
+version = 0.1

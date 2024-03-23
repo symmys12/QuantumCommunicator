@@ -1,0 +1,27 @@
+Mods: {
+	QuantumCommunicator: {
+		Items: {
+			QuantumCommunicatorItem: {
+				DisplayName: Quantum Communicator
+				Tooltip:
+					'''
+					[c/d0d690:~ Left click to teleport home, right click to open teleportation menu ~]
+					[c/d0d690:Right clicking the item in the hotbar will teleport you to the cursor's location]
+					'''
+			}
+
+			StrangeMoonShard: {
+				DisplayName: Strange Moon Shard
+				Tooltip:
+					'''
+					[c/d0d690:A strange crystal that seems to be pulsating with energy]
+					[c/d0d690:It's use is unknown with your current knowledge]
+
+					[c/ad4040:You get the feeling it knows all about you...]
+					'''
+			}
+		}
+
+		Tiles.StrangeMoonShardTile.MapEntry: Strange Moon Shard Tile
+	}
+}
