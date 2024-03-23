@@ -39,8 +39,9 @@ namespace QuantumCommunicator.Helper
         public override void OnWorldLoad()
         {
             base.OnWorldLoad();
-            tagName = Main.worldID+"_SavedNamedCoordinates";
-            tagForShard = Main.worldID+"_ShardDropped";
+            Player player = Main.player[Main.myPlayer];
+            tagName = Main.worldID+"_"+player.whoAmI+"_SavedNamedCoordinates";
+            tagForShard = Main.worldID+player.whoAmI+"_ShardDropped";
         }
         public override void LoadWorldData(TagCompound tag)
         {
