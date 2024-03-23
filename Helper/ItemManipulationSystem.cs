@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
-using log4net.Repository.Hierarchy;
 using QuantumCommunicator.Items;
 using Terraria;
 using Terraria.GameContent.Generation;

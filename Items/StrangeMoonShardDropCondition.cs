@@ -1,6 +1,4 @@
-using Terraria;
 using Terraria.GameContent.ItemDropRules;
-using Terraria.ModLoader;
 
 namespace QuantumCommunicator.Items{
     public class StrangeMoonShardDropCondition : IItemDropRuleCondition

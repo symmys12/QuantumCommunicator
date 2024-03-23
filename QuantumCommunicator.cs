@@ -1,6 +1,5 @@
 using Terraria.ModLoader;
 using log4net;
-using Terraria.UI;
 using Terraria;
 
 

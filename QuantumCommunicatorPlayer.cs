@@ -1,8 +1,5 @@
-using QuantumCommunicator.Helper;
 using QuantumCommunicator.Interface;
-using QuantumCommunicator.Items;
 using Terraria;
-using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
 namespace QuantumCommunicator

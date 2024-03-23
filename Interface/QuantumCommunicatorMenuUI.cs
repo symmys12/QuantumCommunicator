@@ -9,7 +9,7 @@ using ReLogic.Content;
 using Terraria.Audio;
 using QuantumCommunicator.Helper;
 using System.Collections.Generic;
-using System;
+
 namespace QuantumCommunicator.Interface
 {
 	internal class QuantumCommunicatorMenuUI : UIState

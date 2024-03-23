@@ -1,4 +1,4 @@
-Introducing the marvel of interdimensional engineering: The Quantum Communicator!
+Introducing the marvel of interdimensional engineering: **The Quantum Communicator!**
 
 With the capacity to store up to 20 distinct locations, explorers can instantly teleport to their saved destinations, turning tedious journeys into mere thoughts.
 

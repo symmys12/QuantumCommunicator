@@ -1,9 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
-using QuantumCommunicator.Helper;
-using QuantumCommunicator.Items;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;

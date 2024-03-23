@@ -6,8 +6,6 @@ using Terraria.ModLoader;
 using Terraria.Localization;
 using Terraria.DataStructures;
 using System.Collections.Generic;
-using System.Linq;
-using Humanizer;
 using Microsoft.Xna.Framework.Input;
 
 namespace QuantumCommunicator.Items
