@@ -20,6 +20,13 @@ namespace QuantumCommunicator.Interface {
             QuantumCommunicatorMenuUI.visible = false;
 			userInterface?.SetState(null);
 		}
+		public void ToggleUI(){
+			if(QuantumCommunicatorMenuUI.visible){
+				HideMyUI();
+			} else {
+				ShowMyUI();
+			}
+		}
 		public override void UpdateUI(GameTime gameTime) {
 			// Here we call .Update on our custom UI and propagate it to its state and underlying elements
 			if (userInterface != null) {

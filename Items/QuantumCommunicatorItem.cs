@@ -7,6 +7,8 @@ using Terraria.Localization;
 using Terraria.DataStructures;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Input;
+using Humanizer;
+using System.Linq;
 
 namespace QuantumCommunicator.Items
 {
@@ -101,9 +103,11 @@ namespace QuantumCommunicator.Items
         public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			Player player = Main.player[Main.myPlayer];
-			int indexOfFirst = tooltips.FindLastIndex(x => x.Mod == "Terraria" && x.Name == "Tooltip1");
+			int indexOfFirst = 0;
 			if(!Main.keyState.IsKeyDown(Keys.LeftShift)){
 				// If the player is not holding shift, show the default tooltip
+				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, $"Left click to teleport home, right click (or press '{QuantumCommunicator.OpenMenuKey.GetAssignedKeys().FirstOrDefault()}') to open teleportation menu"));
+				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, $"Right clicking with the item in hand (or by pressing '{QuantumCommunicator.RodOfHarmonyKey.GetAssignedKeys().FirstOrDefault()}') will teleport you to the cursor's location"));
 				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "holdShift", "[c/d18c38:* Hold LEFT SHIFT to show most of the players stats *]"));
 				return;
 			} else {
@@ -120,7 +124,9 @@ namespace QuantumCommunicator.Items
 				string maxLife = (player.statLifeMax2 - player.statLifeMax).ToString();
 				string manaReduction = (100 - (player.manaCost * 100)) + "%";
 				string lifeRegen = player.lifeRegen.ToString();
-
+		
+				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, $"Left click to teleport home, right click (or press '{QuantumCommunicator.OpenMenuKey.GetAssignedKeys().FirstOrDefault()}') to open teleportation menu"){OverrideColor = Color.Beige});
+				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, $"Right clicking with the item in hand (or by pressing '{QuantumCommunicator.RodOfHarmonyKey.GetAssignedKeys().FirstOrDefault()}') will teleport you to the cursor's location"){OverrideColor = Color.Beige});
 				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, "[c/243029:———————————————————————————————]"));
 				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, "Melee damage/critical strike chance boosts are " + meleeDamage){OverrideColor = Color.Red});
 				tooltips.Insert(++indexOfFirst, new TooltipLine(Mod, "Tooltip"+indexOfFirst, "Melee swing time is " + playerAttackSpeed){OverrideColor = Color.LimeGreen});

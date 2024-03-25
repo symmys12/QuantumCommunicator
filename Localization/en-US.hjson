@@ -3,11 +3,7 @@ Mods: {
 		Items: {
 			QuantumCommunicatorItem: {
 				DisplayName: Quantum Communicator
-				Tooltip:
-					'''
-					[c/d0d690:~ Left click to teleport home, right click to open teleportation menu ~]
-					[c/d0d690:Right clicking the item in the hotbar will teleport you to the cursor's location]
-					'''
+				Tooltip: ""
 			}
 
 			StrangeMoonShard: {
@@ -23,5 +19,10 @@ Mods: {
 		}
 
 		Tiles.StrangeMoonShardTile.MapEntry: Strange Moon Shard Tile
+
+		Keybinds: {
+			"Use Rod of Harmony.DisplayName": Use  Rod of  Harmony
+			"Open Quantum Communicator Teleport Menu.DisplayName": Open  Quantum  Communicator  Teleport  Menu
+		}
 	}
 }
